@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.card-container {
+  display: grid;
+  gap: 1rem;
+  width: 350px;
+}
+h2 {
+  font-weight: 100;
+  color: yellow;
+}
+
+/* INPUT SECTION */
+.inputs-section {
+  display: grid;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  padding: 1rem;
+}
+
+.bill-sec input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+}
+.bill-sec input[type="text"],
+textarea {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  color: #fff;
+}
+
+.people-sec input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+}
+.people-sec input[type="text"],
+textarea {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  color: #fff;
+}
+
+/* TIP SECTION */
+.tip-sec .tip-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tip-sec .tip-btns div {
+  display: flex;
+  justify-content: space-between;
+}
+.tip-sec .tip-btns button {
+  cursor: pointer;
+  width: 49%;
+}
+.tip-sec .tip-btns input {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.6rem;
+}
+
+/* OUTPUT SECTION */
+.outputs-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  padding: 0 1rem;
+}
+.outputs-section .tip-amount {
+  display: flex;
+  justify-content: space-between;
+}
+.outputs-section .total {
+  display: flex;
+  justify-content: space-between;
+}
+.outputs-section button {
+  cursor: pointer;
+  width: 100%;
+}
+
+/* BUTTONS */
+.tip-btns button {
+  background-color: yellow;
+  padding: 0.5rem 0;
+}
+.reset-btn {
+  background-color: yellow;
+  padding: 1rem;
+}

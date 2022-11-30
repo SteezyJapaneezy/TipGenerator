@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>My Project</title>
+  </head>
+  <body>
+    <h2>TIP GENERATOR</h2>
+    <div class="card-container">
+      <div class="inputs-section">
+        <div class="bill-sec">
+          <p>Bill:</p>
+          <div class="bill-input">
+            <input type="text" placeholder="0" id="bill" />
+          </div>
+        </div>
+
+        <div class="people-sec">
+          <p>Number Of People:</p>
+          <div class="people-input">
+            <input type="text" placeholder="1" id="people" />
+          </div>
+        </div>
+
+        <div class="tip-sec">
+          <p>Select Tip Amount:</p>
+          <div class="tip-btns">
+            <div>
+              <button>5%</button>
+              <button>10%</button>
+            </div>
+            <div>
+              <button>15%</button>
+              <button>25%</button>
+            </div>
+            <div>
+              <input type="number" placeholder="Custom" id="custom" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outputs-section">
+        <div class="tip-amount">
+          <p>Tip Amount<br /><span>/Person</span></p>
+          <h2 id="tipAmount">$0.00</h2>
+        </div>
+        <div class="total">
+          <p>Total <br /><span>/Person</span></p>
+          <h2 id="total">$0.00</h2>
+        </div>
+      </div>
+      <button class="reset-btn" id="resetBtn">Reset</button>
+    </div>
+  </body>
+</html>
